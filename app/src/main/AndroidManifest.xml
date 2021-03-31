@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Top100Crypto">
-        <activity android:name=".activities.AboutActivity"></activity>
+        <activity android:name=".activities.AboutActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
