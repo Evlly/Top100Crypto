@@ -1,4 +1,4 @@
-package com.example.top100crypto
+package com.example.top100crypto.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,8 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
-import com.example.top100crypto.activities.AboutActivity
+import com.example.top100crypto.R
+import com.example.top100crypto.fragments.CurrenciesListFragment
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.interstitial.InterstitialAd
@@ -36,6 +37,13 @@ class MainActivity : AppCompatActivity() {
                     mInterstitialAd = interstitialAd
                 }
             })
+
+        if (savedInstanceState == null){
+            supportFragmentManager
+                .beginTransaction()
+                .add(R.id.container, CurrenciesListFragment(), null)
+                .commit()
+        }
 
     }
 

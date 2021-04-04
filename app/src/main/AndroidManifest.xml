@@ -12,9 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Top100Crypto">
         <activity android:name=".activities.AboutActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".activities.MainActivity">
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
