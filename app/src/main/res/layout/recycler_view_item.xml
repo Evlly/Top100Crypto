@@ -41,31 +41,38 @@
         android:id="@+id/tvCurrencyMarketCap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="$ 278839000"
+        tools:text="278839000"
 
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="8dp" app:layout_constraintBottom_toBottomOf="@+id/tvCurrencySym"
-        android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="@+id/tvCurrencySym"/>
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCurrencySym"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toTopOf="@+id/tvCurrencySym"/>
     <TextView
         tools:text="14.4545"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent" android:id="@+id/tvCurrencyPrice"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/tvCurrencyPrice"
         app:layout_constraintTop_toTopOf="@+id/tvCurrencyName"/>
     <TextView
-        android:text="Market Cap "
+        android:text="Market Cap: $ "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tvMarketCapRank"
         app:layout_constraintTop_toTopOf="@+id/tvCurrencyMarketCap"
         app:layout_constraintBottom_toBottomOf="@+id/tvCurrencyMarketCap"
-        app:layout_constraintEnd_toStartOf="@+id/tvCurrencyMarketCap" app:layout_constraintVertical_bias="0.0"/>
+        app:layout_constraintEnd_toStartOf="@+id/tvCurrencyMarketCap"
+        app:layout_constraintVertical_bias="0.0"/>
     <TextView
         android:text="Price $ "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tvPrice"
-        app:layout_constraintTop_toTopOf="@+id/tvCurrencyPrice" android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/tvCurrencyPrice" app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toTopOf="@+id/tvCurrencyPrice"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCurrencyPrice"
+        app:layout_constraintVertical_bias="0.0"
         app:layout_constraintEnd_toStartOf="@+id/tvCurrencyPrice"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

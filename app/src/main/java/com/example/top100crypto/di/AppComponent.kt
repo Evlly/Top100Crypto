@@ -1,6 +1,8 @@
 package com.example.top100crypto.di
 
+import com.example.top100crypto.activities.ChartActivity
 import com.example.top100crypto.activities.MainActivity
+import com.example.top100crypto.chart.LatestChart
 import com.example.top100crypto.fragments.CurrenciesListFragment
 import com.example.top100crypto.mvp.presenter.CurrenciesPresenter
 import com.example.top100crypto.mvp.presenter.LatestChartPresenter
@@ -14,5 +16,7 @@ interface AppComponent {
     fun inject(presenter: CurrenciesPresenter)
     fun inject(presenter: LatestChartPresenter)
     fun inject(fragment: CurrenciesListFragment)
+    fun inject(chart: LatestChart)
+    fun inject(activity: ChartActivity)
 
 }
